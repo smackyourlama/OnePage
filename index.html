@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Tools That Pay You Back — One Page Review Portal</title>
+  <meta name="description" content="A curated one-page portal of AI and automation tools that actually make money. Fast reviews, clean comparisons, and affiliate savings links." />
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="AI Tools That Pay You Back" />
+  <meta property="og:description" content="Curated, fast reviews of AI tools that help you earn — with templates, comparisons, and getting-started guides." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --brand:#22c55e;
+      --brand-2:#60a5fa;
+      --ring: 0 0 0 3px rgba(34,197,94,.25);
+      --shadow: 0 10px 30px rgba(2,6,23,.45);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #1f2937;border-radius:999px;padding:6px 12px;background:linear-gradient(180deg,#0b1220,#0e1526);color:#a5b4fc;font-size:.85rem}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;margin-top:10px}
+    .hero h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.1;margin:14px 0 8px}
+    .lead{color:var(--muted);font-size:1.075rem;max-width:60ch}
+    .card{background:linear-gradient(180deg,#0f172a,#0b1220);border:1px solid #1f2937;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),#16a34a);color:#08121a;border:none;border-radius:14px;padding:14px 18px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(34,197,94,.35)}
+    .cta:hover{transform:translateY(-1px)}
+    .cta.secondary{background:linear-gradient(135deg,var(--brand-2),#3b82f6);color:#071524}
+    .row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .row.two{grid-template-columns:repeat(2,1fr)}
+    .section{margin:60px 0}
+    h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 10px}
+    .kpis{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
+    .kpi{flex:1 1 180px;background:linear-gradient(180deg,#0b1220,#0f172a);border:1px solid #1f2937;border-radius:14px;padding:12px}
+    .kpi strong{font-size:1.4rem;display:block}
+    .tool{display:flex;flex-direction:column;gap:8px}
+    .tool h3{margin:2px 0 0;font-size:1.1rem}
+    .tool p{margin:0;color:var(--muted);min-height:3.2em}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid #1f2937;border-radius:999px;color:#a7f3d0;background:rgba(16,185,129,.12);font-size:.8rem}
+    .list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .list svg{flex:0 0 auto;margin-top:2px}
+    .table{width:100%;border-collapse:separate;border-spacing:0 8px}
+    .table th,.table td{padding:12px 14px;text-align:left}
+    .table thead th{color:#cbd5e1;font-weight:600;font-size:.95rem}
+    .table tbody tr{background:linear-gradient(180deg,#0b1220,#0f172a);border:1px solid #1f2937}
+    .table tbody td{border-top:1px solid #1f2937;border-bottom:1px solid #1f2937}
+    .faq{display:grid;grid-template-columns:1fr;gap:12px}
+    details{background:linear-gradient(180deg,#0b1220,#0f172a);border:1px solid #1f2937;border-radius:14px;padding:14px}
+    summary{cursor:pointer;font-weight:600}
+    footer{margin:50px 0 10px;color:#64748b;font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .nav{position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter: blur(8px);border-bottom:1px solid #1f2937}
+    .nav .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 28px}
+    .nav a{color:#cbd5e1}
+    .nav .links{display:flex;gap:14px;align-items:center}
+    .tiny{font-size:.85rem;color:#94a3b8}
+    .tag{font-size:.75rem;color:#67e8f9;border:1px dashed #164e63;border-radius:999px;padding:4px 8px;background:rgba(8,145,178,.1)}
+    .notice{border-left:4px solid var(--brand);padding:10px 12px;background:rgba(34,197,94,.08);border-radius:10px}
+    @media (max-width: 880px){
+      .hero{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      .row.two{grid-template-columns:1fr}
+      .nav .wrap{padding:10px 18px}
+      .wrap{padding:22px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Top AI Tools That Help You Earn",
+    "itemListElement": [{
+      "@type": "ListItem","position": 1,
+      "item": {"@type": "SoftwareApplication","name":"Tool A — AI Copy/Ad Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web"}
+    },{
+      "@type": "ListItem","position": 2,
+      "item": {"@type": "SoftwareApplication","name":"Tool B — Automation/Workflow","applicationCategory":"Automation","operatingSystem":"Web"}
+    },{
+      "@type": "ListItem","position": 3,
+      "item": {"@type": "SoftwareApplication","name":"Tool C — AI Image/Video","applicationCategory":"Multimedia","operatingSystem":"Web"}
+    }]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a href="#" class="badge" aria-label="Home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-10.5Z" stroke="#a5b4fc" stroke-width="1.5"/>
+        </svg>
+        AI Tools That Pay
+      </a>
+      <nav class="links">
+        <a href="https://www.notion.so/AI-Tools-That-Pay-You-28b6f4e9465580fb8470cb7b2f700df6?source=copy_link">Tools</a>
+        <a href="https://www.notion.so/SOP-Pack-28b6f4e9465580c7ac7fc840c2c9af31?source=copy_link">Compare</a>
+        <a href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link">Templates</a>
+        <a href="https://www.notion.so/w-to-Sell-This-28b6f4e9465580ac9e10f9f0303a8d76?source=copy_link">FAQ</a>
+        <a href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link" class="tag">Start Here</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <span class="badge">No fluff • Just tools that earn</span>
+        <h1>Turn AI Into Cash: The Best Tools That <em>Actually</em> Pay You Back</h1>
+        <p class="lead">This one-page portal curates the most reliable AI + automation tools for freelancers, small agencies, and creators. Fast reviews, clean comparisons, and “click-to-use” templates. Replace the doom-scroll with deposits.</p>
+        <div class="kpis">
+          <div class="kpi"><strong>3–7 hrs</strong><span class="tiny">To first working setup with our templates</span></div>
+          <div class="kpi"><strong>$0 Upfront</strong><span class="tiny">Use free tiers, pay only if you profit</span></div>
+          <div class="kpi"><strong>1 Page</strong><span class="tiny">Bookmark this hub — updated often</span></div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:14px">
+          <a id="start" href="https://www.notion.so/AI-Tools-That-Pay-You-Curated-by-Nicco-28b6f4e9465580fb8470cb7b2f700df6?source=copy_link" class="cta">Show Me the Top Tools →</a>
+          <a href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link" class="cta secondary">Grab Free Templates</a>
+        </div>
+        <p class="tiny" style="margin-top:10px;color:#94a3b8">Some links are affiliate links — they never cost you more. In many cases they unlock extended trials or discounts.</p>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Quick Start: Pick a Play</h2>
+        <ul class="list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg>
+            <div><strong>AI Ad + Landing Page Sprint</strong><div class="tiny">Generate ads + a landing page for a local service, drive calls/leads in 48 hours.</div></div>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg>
+            <div><strong>Automation-as-a-Service</strong><div class="tiny">Build small paid automations for busy founders: intake → CRM → invoice → email.</div></div>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg>
+            <div><strong>Faceless Content Engine</strong><div class="tiny">Create shorts from RSS/news with auto captions; monetize with affiliates.</div></div>
+          </li>
+        </ul>
+        <div class="notice" style="margin-top:12px">
+          <strong>Rule of Thumb:</strong> Ship a tiny offer in 72 hours. If it earns $1, scale. If not, swap the tool — not the goal.
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Top Tools That Help You Earn (Curated)</h2>
+      <div class="row">
+        <article class="card tool">
+          <span class="pill">Lead Gen & Copy</span>
+          <h3>Tool A — AI Copy & Ad Generator</h3>
+          <p>Spin up high-converting ads, landing pages, and email sequences. Perfect for local services and affiliate funnels.</p>
+          <ul class="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Prebuilt ad + page recipes</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>CTR + conversion hints baked in</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:auto">
+            <a class="cta" href="https://jenni.ai/?via=nicco" target="_blank" rel="nofollow noopener">Try Free Trial</a>
+            <a class="cta secondary" href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link">Use My Template</a>
+          </div>
+        </article>
+
+        <article class="card tool">
+          <span class="pill">Automation</span>
+          <h3>Tool B — No-Code Workflow/Automation</h3>
+          <p>Automate intake → CRM → invoice → email. Charge monthly for maintenance, keep churn low with dashboards.</p>
+          <ul class="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Hundreds of connectors</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Schedules, webhooks, retries</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:auto">
+            <a class="cta" href="https://www.pabbly.com/" target="_blank" rel="nofollow noopener">Build Your First Flow</a>
+            <a class="cta secondary" href="https://www.notion.so/SOP-Pack-28b6f4e9465580c7ac7fc840c2c9af31?source=copy_link">Client SOP Pack</a>
+          </div>
+        </article>
+
+        <article class="card tool">
+          <span class="pill">Content & Design</span>
+          <h3>Tool C — AI Image/Video Studio</h3>
+          <p>Generate product shots, thumbnails, and short videos. Batch content for shorts/TikTok and attach affiliate CTAs.</p>
+          <ul class="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Background removal, upscale</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Templates for ads & shorts</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:auto">
+            <a class="cta" href="https://pika.style?via=nicco" target="_blank" rel="nofollow noopener">Create for Free</a>
+            <a class="cta secondary" href="https://www.notion.so/Swipe-File-28b6f4e9465580898beacfee13e0278e?source=copy_link">Swipe File</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="compare" class="section">
+      <h2>Compare at a Glance</h2>
+      <div class="card">
+        <table class="table" role="table" aria-label="Comparison table">
+          <thead>
+            <tr><th>Tool</th><th>Best For</th><th>Free Tier</th><th>Time to First Win</th><th>My Verdict</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tool A</strong></td>
+              <td>Ads + landing pages</td>
+              <td>Yes</td>
+              <td>1–2 hours</td>
+              <td>Fast to monetize for local offers</td>
+            </tr>
+            <tr>
+              <td><strong>Tool B</strong></td>
+              <td>Business automation</td>
+              <td>Yes</td>
+              <td>2–4 hours</td>
+              <td>Great for monthly retainers</td>
+            </tr>
+            <tr>
+              <td><strong>Tool C</strong></td>
+              <td>Content engine</td>
+              <td>Yes</td>
+              <td>3–7 hours</td>
+              <td>Batch + affiliate funnels</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tiny" style="margin-top:8px">Replace tool names with the vendors you choose and paste your affiliate links above.</p>
+    </section>
+
+    <section id="templates" class="section">
+      <h2>Free Templates & Swipe Files</h2>
+      <div class="row two">
+        <div class="card">
+          <h3>Local Service Lead Gen Kit</h3>
+          <ul class="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Landing page copy (headline, bullets, CTA)</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>3x Ad variations (short + long)</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Offer sheet + pricing ladder</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <a class="cta" href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link" target="_blank" rel="noopener">Open Template</a>
+            <a class="cta secondary" href="mailto:jokajinx@gmail.com?subject=Custom%20Setup&body=I%20want%20help%20with%20the%20Lead%20Gen%20Kit." rel="noopener">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Automation Client Starter Pack</h3>
+          <ul class="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Intake form → CRM mapping</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>Invoice + email sequences</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#22c55e" stroke-width="2"/></svg><span>“Keep-the-Lights-On” checklist</span></li>
+          </ul>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <a class="cta" href="https://www.notion.so/Free-Templates-28b6f4e946558040bd8ed02e7c58ff1b?source=copy_link" target="_blank" rel="noopener">Open Template</a>
+            <a class="cta secondary" href="https://www.notion.so/w-to-Sell-This-28b6f4e9465580ac9e10f9f0303a8d76?source=copy_link">How to Sell This</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW BUSINESS AUTOMATION SECTION placed right above FAQ -->
+    <section id="n8n-setup" class="section">
+      <h2>Need an n8n Workflow for Your Business?</h2>
+      <div class="card">
+        <p>If you are running a business and you need someone to set up an <strong>n8n workflow</strong> that will automate your business like <em>"insert N8n Business workflows here"</em> — please reach out and we will get you set up to make your business better and faster.</p>
+        <ul class="list tiny" style="margin-top:6px">
+          <!-- Replace these with your own examples or keep as inspiration -->
+          <li>Lead capture → CRM → email/SMS follow-up</li>
+          <li>Proposal → e-sign → invoice → payment receipt</li>
+          <li>Support intake → AI triage → Slack/Helpdesk ticket</li>
+          <li>Content queue → generation → scheduling → analytics</li>
+        </ul>
+        <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;">
+          <a class="cta" href="mailto:jokajinx@gmail.com?subject=Automate%20My%20Business%20with%20n8n&body=Hi%2C%20I%27d%20like%20help%20setting%20up%20an%20n8n%20workflow%20for%20my%20business." rel="noopener">Get Help Setting Up n8n →</a>
+          <a class="cta secondary" href="https://n8n.io" target="_blank" rel="noopener">Learn About n8n</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>How do I make this page cost $0?</summary>
+          <div class="tiny">Use any free host (Carrd, Google Sites, Notion). Keep the default subdomain. Use only tools with free tiers until revenue shows up.</div>
+        </details>
+        <details>
+          <summary>Where do the affiliate links go?</summary>
+          <div class="tiny">Replace the placeholder URLs in the buttons with your unique affiliate links from PartnerStack, individual SaaS programs, or marketplaces.</div>
+        </details>
+        <details>
+          <summary>What’s the fastest path to first dollars?</summary>
+          <div class="tiny">Run the Local Service Lead Gen Kit with Tool A + Tool B — small city targeting, phone-call CTAs, and same-day replies.</div>
+        </details>
+        <details>
+          <summary>Can I collect emails on a free plan?</summary>
+          <div class="tiny">Yes. Use a free-tier email service or a simple <code>mailto:</code> link here until you’re ready to add forms.</div>
+        </details>
+      </div>
+    </section>
+
+    <footer>\n      <div>© <span id="y"></span> AI Tools That Pay — Curated by You</div>
+      <div class="tiny">Disclosures: This site uses affiliate links. You never pay extra.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
